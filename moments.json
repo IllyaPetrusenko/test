@@ -98,7 +98,7 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/items"
+              "$ref": "https://github.com/IllyaPetrusenko/test/edit/main/moments.json/components/schemas/items"
             }
           }
         },
