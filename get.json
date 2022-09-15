@@ -98,7 +98,7 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "https://raw.githubusercontent.com/IllyaPetrusenko/test/main/post.json/components/schemas/items"
+              "$ref": "https://raw.githubusercontent.com/IllyaPetrusenko/test/main/post.json#/components/schemas/items"
             }
           }
         },
