@@ -1,10 +1,7 @@
 {
   "openapi": "3.0.0",
-  "x-stoplight": {
-    "id": "qre585aflkw22"
-  },
   "info": {
-    "title": "OMS",
+    "title": "UMS",
     "version": "1.0"
   },
   "servers": [
@@ -18,7 +15,40 @@
         "summary": "Change status",
         "tags": [],
         "responses": {},
-        "operationId": "patch-v1-kyc-status"
+        "operationId": "patch-v1-kyc-status",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          },
+          "description": ""
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "request_user_id",
+            "required": true
+          }
+        ]
       }
     }
   },
