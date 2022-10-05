@@ -434,8 +434,7 @@
                   },
                   "message": {
                     "type": "string",
-                    "maxLength": 255,
-                    "minLength": 1
+                    "maxLength": 255
                   }
                 },
                 "required": [
