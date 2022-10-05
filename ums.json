@@ -12,7 +12,7 @@
   "paths": {
     "/v1/kyc/status": {
       "patch": {
-        "summary": "Change status",
+        "summary": "Change kyc status",
         "tags": [],
         "responses": {
           "200": {
