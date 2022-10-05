@@ -477,7 +477,7 @@
               ]
             },
             "in": "query",
-            "name": "isAdmin"
+            "name": "is_admin"
           }
         ]
       }
