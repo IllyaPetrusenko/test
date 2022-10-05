@@ -14,7 +14,28 @@
       "patch": {
         "summary": "Change status",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "string"
+                    }
+                  },
+                  "x-examples": {
+                    "example-1": {
+                      "data": "some string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "operationId": "patch-v1-kyc-status",
         "requestBody": {
           "content": {
