@@ -365,7 +365,6 @@
                   }
                 },
                 "required": [
-                  "user_id",
                   "new_status"
                 ]
               }
