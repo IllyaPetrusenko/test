@@ -21,7 +21,301 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "properties": {}
+                  "properties": {
+                    "code": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "user_type_id": {
+                          "type": "integer"
+                        },
+                        "kyc_data": {
+                          "type": "object",
+                          "properties": {
+                            "docs": {
+                              "type": "object",
+                              "properties": {
+                                "identity_proof": {
+                                  "type": "object",
+                                  "properties": {
+                                    "files": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "filename": {
+                                            "type": "string"
+                                          },
+                                          "extension": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "ps_id": {
+                                      "type": "integer"
+                                    },
+                                    "kyc_status_id": {
+                                      "type": "integer"
+                                    }
+                                  }
+                                },
+                                "registration_proof": {
+                                  "type": "object",
+                                  "properties": {
+                                    "files": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "filename": {
+                                            "type": "string"
+                                          },
+                                          "extension": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "ps_id": {
+                                      "type": "integer"
+                                    },
+                                    "kyc_status_id": {
+                                      "type": "integer"
+                                    }
+                                  }
+                                },
+                                "articles_of_association": {
+                                  "type": "object",
+                                  "properties": {
+                                    "files": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "filename": {
+                                            "type": "string"
+                                          },
+                                          "extension": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "ps_id": {
+                                      "type": "integer"
+                                    },
+                                    "kyc_status_id": {
+                                      "type": "integer"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "email": {
+                              "type": "string"
+                            },
+                            "phone": {
+                              "type": "string"
+                            },
+                            "message": {
+                              "type": "string"
+                            },
+                            "last_name": {
+                              "type": "string"
+                            },
+                            "birth_date": {
+                              "type": "integer"
+                            },
+                            "first_name": {
+                              "type": "string"
+                            },
+                            "updated_at": {
+                              "type": "integer"
+                            },
+                            "company_name": {
+                              "type": "string"
+                            },
+                            "company_number": {
+                              "type": "string"
+                            },
+                            "ubo_declaration": {
+                              "type": "object",
+                              "properties": {
+                                "ubo": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "last_name": {
+                                        "type": "string"
+                                      },
+                                      "birth_date": {
+                                        "type": "integer"
+                                      },
+                                      "first_name": {
+                                        "type": "string"
+                                      },
+                                      "postal_code": {
+                                        "type": "string"
+                                      },
+                                      "zip_address": {
+                                        "type": "string"
+                                      },
+                                      "birth_location_id": {
+                                        "type": "integer"
+                                      },
+                                      "citizenship_location_id": {
+                                        "type": "integer"
+                                      },
+                                      "registration_location_id": {
+                                        "type": "integer"
+                                      }
+                                    }
+                                  }
+                                },
+                                "ps_id": {
+                                  "type": "integer"
+                                },
+                                "ubo_status_id": {
+                                  "type": "integer"
+                                }
+                              }
+                            },
+                            "professional_type_id": {
+                              "type": "integer"
+                            },
+                            "residence_location_id": {
+                              "type": "integer"
+                            },
+                            "headquater_location_id": {
+                              "type": "integer"
+                            },
+                            "citizenship_location_id": {
+                              "type": "integer"
+                            },
+                            "headquarters_postal_code": {
+                              "type": "string"
+                            },
+                            "headquarters_zip_address": {
+                              "type": "string"
+                            },
+                            "incorporation_location_id": {
+                              "type": "integer"
+                            },
+                            "representative_postal_code": {
+                              "type": "string"
+                            },
+                            "representative_zip_address": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "kyc_status_id": {
+                          "type": "integer"
+                        },
+                        "kyc_status_change_date": {
+                          "type": "integer"
+                        },
+                        "link": {
+                          "type": "string"
+                        },
+                        "user_name": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {}
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "x-examples": {
+                    "example-1": {
+                      "code": 200,
+                      "status": "OK",
+                      "data": {
+                        "user_type_id": 2,
+                        "kyc_data": {
+                          "docs": {
+                            "identity_proof": {
+                              "files": [
+                                {
+                                  "filename": "c06197b5-1166-42ab-9569-973cb323c51b",
+                                  "extension": "png"
+                                }
+                              ],
+                              "ps_id": 147,
+                              "kyc_status_id": 2
+                            },
+                            "registration_proof": {
+                              "files": [
+                                {
+                                  "filename": "c06197b5-1166-42ab-9569-973cb323r34g",
+                                  "extension": "png"
+                                }
+                              ],
+                              "ps_id": 149,
+                              "kyc_status_id": 2
+                            },
+                            "articles_of_association": {
+                              "files": [
+                                {
+                                  "filename": "c06197b5-1166-42ab-9569-973cb323ths",
+                                  "extension": "png"
+                                }
+                              ],
+                              "ps_id": 148,
+                              "kyc_status_id": 2
+                            }
+                          },
+                          "email": "legal@mailinator.com",
+                          "phone": "1234567890",
+                          "message": "The document cannot be read",
+                          "last_name": "lastname",
+                          "birth_date": 972950400,
+                          "first_name": "firstname",
+                          "updated_at": 1588088193,
+                          "company_name": "company name",
+                          "company_number": "L1234567",
+                          "ubo_declaration": {
+                            "ubo": [
+                              {
+                                "last_name": "lastname",
+                                "birth_date": 972950400,
+                                "first_name": "firstname",
+                                "postal_code": "12345",
+                                "zip_address": "address",
+                                "birth_location_id": 982299,
+                                "citizenship_location_id": 5,
+                                "registration_location_id": 982299
+                              }
+                            ],
+                            "ps_id": 3,
+                            "ubo_status_id": 2
+                          },
+                          "professional_type_id": 1,
+                          "residence_location_id": 982299,
+                          "headquater_location_id": 982299,
+                          "citizenship_location_id": 4,
+                          "headquarters_postal_code": "11111",
+                          "headquarters_zip_address": "headquarters zip address",
+                          "incorporation_location_id": 982299,
+                          "representative_postal_code": "12345",
+                          "representative_zip_address": "representative zip address"
+                        },
+                        "kyc_status_id": 2,
+                        "kyc_status_change_date": 1664960802,
+                        "link": "pro/",
+                        "user_name": []
+                      }
+                    }
+                  }
                 }
               }
             }
