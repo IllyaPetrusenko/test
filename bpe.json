@@ -11,13 +11,15 @@
   ],
   "paths": {
     "/v1/users/kyc​/change-status​": {
-      "patch": {
-        "summary": "Change status",
-        "tags": [],
-        "responses": {},
-        "operationId": "patch-v1-kyc-status"
-      },
-      "parameters": []
+      "post": {
+        "summary": "",
+        "operationId": "post-v1-users-kyc-change-status",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
