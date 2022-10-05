@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "UMS",
+    "title": "OMS",
     "version": "1.0"
   },
   "servers": [
@@ -21,7 +21,24 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "properties": {}
+                "properties": {
+                  "user_id": {
+                    "type": "integer"
+                  },
+                  "new_status": {
+                    "type": "integer"
+                  },
+                  "message": {
+                    "type": "string"
+                  }
+                },
+                "x-examples": {
+                  "example-1": {
+                    "user_id": 6,
+                    "new_status": 1,
+                    "message": "some comment"
+                  }
+                }
               }
             },
             "application/xml": {
